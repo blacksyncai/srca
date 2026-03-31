@@ -1,4 +1,4 @@
 FROM python:3.8
 WORKDIR /app
-COPY server.py .
+COPY Server.py .
 CMD ["python3", "server.py"]
