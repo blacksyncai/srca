@@ -17,7 +17,8 @@ server.listen(5)
 print(f"TCP server listening on port {port}...")
 
 while True:
-conn, addr = server.accept()
+conn.send(response.encode()) 
+elif "APHP" in data:
 print(f"Watch connected: {addr}")
 while True:
 data = conn.recv(1024).decode('utf-8', errors='ignore')
