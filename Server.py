@@ -16,7 +16,7 @@ while True:
         print(f"Received: {data}")
         if "AP00" in data:
             response = f"IW*BP00*,{datetime.utcnow().strftime('%Y%m%d%H%M%S')},3#"
-            conn.send(response.encode())elif "APHP" in data:
+            conn.send(response.encode())
+        elif "APHP" in data:
             conn.send(b"IWBPHP#")
     conn.close()
-    
