@@ -26,4 +26,4 @@ response = f"IW*BP00*,{datetime.utcnow().strftime('%Y%m%d%H%M%S')},3#"
 conn.send(response.encode())
 elif "APHP" in data:
 parts = data.split(',')
-hr = int(parts[1]) if len(parts​​​​​​​​​​​​​​​​
+hr = int(parts[1]) if len(parts
